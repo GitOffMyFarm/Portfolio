@@ -1,0 +1,33 @@
+/*Changes image size properties so they don't outsize the cards as they get smaller*/
+@media screen and (max-width: 803px) {
+    img {
+        height: 200px;
+        width: auto;
+    }
+    #image-1 {
+        height: 250px;
+        width: auto;
+    }
+}
+/*Changes image size properties again so they don't outsize the cards as they get smaller*/
+@media screen and (max-width: 543px) {
+    img {
+        height: 100px;
+        width: auto;
+    }
+    #image-1 {
+        height: 150px;
+        width: auto;
+    }
+    /*Resizes font to get smaller as everything else does so they don't appear disproportionate to images*/
+    p {
+        font-size: 12px;
+    }
+}
+
+/*Changes cards to single column as screen gets too small to fit both*/
+@media screen and (max-width: 293px) {
+    .card {
+        width: 100%;
+    }
+}

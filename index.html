@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Professional Portfolio for Joe Freeman</title>
+    <link rel="stylesheet" href="Assets\style.css">
+    <link rel="stylesheet" href="Assets\mediastyle.css">
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Joe Freeman</h1>
+        <img src="Assets\Pictures\Profile.png" alt="A picture of me">
+        <p>A Portfolio</p>
+    </header>
+    <!--a tags link to ID's of different sections on the page so users can jump there.-->
+    <nav>
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#my-work">My Work</a></li>
+            <li><a href="#contact">Contact Info</a></li>
+        </ul>
+    </nav>
+    <article class="about_me" id="about-me">
+        <h2>About Me</h2>
+        <p>I am an aspiring developer who started teaching myself to code about a year ago. Since then I have I have made projects in HTML/CSS, using Python, and Javascript. I have linked some of my projects below to showcase some of my ability.</p>
+    </article>
+    <!--Put aside element outside of container class to avoid format issues.-->
+    <aside id="my-work"><h2>My Work:</h2></aside>
+    <!--Container for project cards-->
+    <main class="container">
+        <!--All cards given the same class to format the same-->
+        <section class="card">
+            <h3>Dew Bot</h3>
+            <a href="https://repl.it/@jfreeman92/Dew-Bot#main.py"><img src="Assets\Pictures\DewBot.jpg" alt="An Among Us character in Mountain Dew paraphernalia." class="image" id="image-1"></a>
+            <p>A Discord text response bot made for a very specific purpose. The project is housed in Repl and can be found on Github <a href="https://github.com/GetOffMyFarm/Dew-Bot">here</a>.</p>
+        </section>
+        <section class="card">
+            <h3>Cat and Mouse Game</h3>
+            <a href="https://scratch.mit.edu/projects/469859320/editor"><img src="Assets\Pictures\CatandMouse.png" class="image"></a>
+            <p>A Scratch game that involves shooting mice out of the sky using a ball, showcases logic more than actual language ability but still a valuable milestone for most programmers.</p>
+        </section>
+        <section class="card">
+            <h3>Code Refactoring</h3>
+            <a href="https://getoffmyfarm.github.io/Code-Refactoring/"><img src="Assets\Pictures\01-html-css-git-homework-demo.png" alt="Horiseo pamphlet image" class="image"></a>
+            <p>This was my first Bootcamp project, while the code was written already and so was all the functionality, I organized the code by changing semantic elements and clearing out redundant CSS. Link to the Github is <a href="https://github.com/GetOffMyFarm/Code-Refactoring">here</a>.</p>
+        </section>
+        <section class="card">
+            <h3>About Me Page</h3>
+            <a href="https://getoffmyfarm.github.io/prework-about-me/"><img src="Assets\Pictures\AboutMe.jpg" alt="Code across a computer screen" class="image"></a>
+            <p>An about me page again styled not by me, however I did add my information to the HTML elements and it's an interesting starting point for me. The Github code is found <a href="https://github.com/GetOffMyFarm/prework-about-me/">here</a>.</p>
+        </section>
+    </main>
+    <footer id="contact">
+        <!--Another ul, this time for contact info.-->
+        <h2>Contact Me:</h2>
+        <ul>
+            <li>Phone: (804) 615-6089</li>
+            <!--Emails me directly rather than going to a URL-->
+            <li>Email:<a href="mailto:freemanjj1992@gmail.com"> Freemanjj1992@gmail.com</a></li>
+            <!--Links to my Github profile and automatically opens it in new tab-->
+            <li><a href="https://github.com/GetOffMyFarm" target="_blank">Github</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
