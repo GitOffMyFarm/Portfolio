@@ -39,9 +39,9 @@ body {
     background-color: #FFECCC;
 }
 .list-group-item {
-    background-color: #646E68 !important;
+    background-color: #FFECCC !important;
 }
 /*Changes the color of the active tab*/
 .nav-tabs > a.active {
-    background-color: #646E68 !important;
+    background-color: #FFECCC !important;
 }
