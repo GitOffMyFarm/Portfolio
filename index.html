@@ -3,66 +3,65 @@
 
 <head>
     <meta charset="UTF-8"/>
-    <title>Professional Portfolio for Joe Freeman</title>
-    <link rel="stylesheet" href="Assets\style.css">
-    <link rel="stylesheet" href="Assets\mediastyle.css">
     <meta name="viewport" content="width=device-width">
+    <title>Professional Portfolio for Joseph Freeman</title>
+    <!--Links to Google font for the page, a reset css page, Bootstrap css pages, and a custom stylesheet-->
+    <link rel="stylesheet" href="./Assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
 
 <body>
-    <header class="header">
-        <h1>Joe Freeman</h1>
-        <img src="Assets\Pictures\Profile.png" alt="A picture of me">
-        <p>A Portfolio</p>
+    <!--Just heading info, all it has is my name and subtitle-->
+    <header class="jumbotron">
+        <h1 class="display-2 text-center">Joseph Freeman</h1>
+        <p class="lead display-4 text-center">Professional Portfolio</p>
     </header>
-    <!--a tags link to ID's of different sections on the page so users can jump there.-->
+    <!--a tags link to ID's of different sections on the page so users can toggle the page there, uses bootstrap tabs so the content is not on the page when not clicked.-->
     <nav>
-        <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#my-work">My Work</a></li>
-            <li><a href="#contact">Contact Info</a></li>
-        </ul>
+        <div class="nav nav-tabs" id="myTab" role="tablist">
+            <a class="nav-item nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About Me</a>
+            <a class="nav-item nav-link" id="profile-tab" data-toggle="tab"  href="#profile" role="tab" aria-controls="profile" aria-selected="false">My Work</a>
+            <a class="nav-item nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact Info</a>
+        </div>
     </nav>
-    <article class="about_me" id="about-me">
-        <h2>About Me</h2>
-        <p>I am an aspiring developer who started teaching myself to code about a year ago. Since then I have I have made projects in HTML/CSS, using Python, and Javascript. I have linked some of my projects below to showcase some of my ability.</p>
-    </article>
-    <!--Put aside element outside of container class to avoid format issues.-->
-    <aside id="my-work"><h2>My Work:</h2></aside>
-    <!--Container for project cards-->
-    <main class="container">
-        <!--All cards given the same class to format the same-->
-        <section class="card">
-            <h3>Dew Bot</h3>
-            <a href="https://repl.it/@jfreeman92/Dew-Bot#main.py"><img src="Assets\Pictures\DewBot.jpg" alt="An Among Us character in Mountain Dew paraphernalia." class="image" id="image-1"></a>
-            <p>A Discord text response bot made for a very specific purpose. The project is housed in Repl and can be found on Github <a href="https://github.com/GetOffMyFarm/Dew-Bot">here</a>.</p>
-        </section>
-        <section class="card">
-            <h3>Cat and Mouse Game</h3>
-            <a href="https://scratch.mit.edu/projects/469859320/editor"><img src="Assets\Pictures\CatandMouse.png" class="image"></a>
-            <p>A Scratch game that involves shooting mice out of the sky using a ball, showcases logic more than actual language ability but still a valuable milestone for most programmers.</p>
-        </section>
-        <section class="card">
-            <h3>Code Refactoring</h3>
-            <a href="https://getoffmyfarm.github.io/Code-Refactoring/"><img src="Assets\Pictures\01-html-css-git-homework-demo.png" alt="Horiseo pamphlet image" class="image"></a>
-            <p>This was my first Bootcamp project, while the code was written already and so was all the functionality, I organized the code by changing semantic elements and clearing out redundant CSS. Link to the Github is <a href="https://github.com/GetOffMyFarm/Code-Refactoring">here</a>.</p>
-        </section>
-        <section class="card">
-            <h3>About Me Page</h3>
-            <a href="https://getoffmyfarm.github.io/prework-about-me/"><img src="Assets\Pictures\AboutMe.jpg" alt="Code across a computer screen" class="image"></a>
-            <p>An about me page again styled not by me, however I did add my information to the HTML elements and it's an interesting starting point for me. The Github code is found <a href="https://github.com/GetOffMyFarm/prework-about-me/">here</a>.</p>
-        </section>
-    </main>
-    <footer id="contact">
-        <!--Another ul, this time for contact info.-->
-        <h2>Contact Me:</h2>
-        <ul>
-            <li>Phone: (804) 615-6089</li>
+    <main class="tab-content" id="myTabContent">
+    <!--First tab, profile picture and small section about me-->
+    <div class="tab-pane fade show active d-flex flex-column align-items-center justify-content-between" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <img src="./Assets/Pictures/Profile.png" class="rounded mx-auto d-block w-25 mt-2" alt="An image of myself"><br>
+        <p class="w-75 text-center">
+            I am a hard-working individual who started my technology career teaching myself HTML and CSS through free courses online. Continuing the self taught mindset I slowly worked my way towards Python and even built a simple call and response bot for Discord.
+            Since then I have decided to take a more formal education route and have started the Full Stack Development Bootcamp through the University of Richmond while switching to a job as Technology Apprentice for Maxx Potential in Richmond, VA.
+            I have always found research a useful skill in my tool belt, when I don't know something I search for answers and when I'm interested in something I must learn anything and everything I can about it.
+            This has served me well in my budding career in technology, and I plan on that passion for learning about development to carry me through the next several years of my budding career.
+        </p>
+    </div>
+    <!--Empty container for project cards-->
+    <div class="tab-pane fade container d-flex" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="row card-body d-flex align-items-stretch justify-content-center" id="card-container"></div>
+        </div>
+    <div class="tab-pane fade d-flex align-items-center justify-content-center container" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        <!--Another list group, this time for contact info.-->
+        <div class="list-group d-flex col-6 mt-4">
+            <!--Link to call my cell phone-->
+            <a class="list-group-item list-group-item-action" href="tel:804-615-6089">(804) 615-6089</a>
             <!--Emails me directly rather than going to a URL-->
-            <li>Email:<a href="mailto:freemanjj1992@gmail.com"> Freemanjj1992@gmail.com</a></li>
+            <a class="list-group-item list-group-item-action" href="mailto:freemanjj1992@gmail.com"> Freemanjj1992@gmail.com</a>
+            <!--Link to my Linkedin profile-->
+            <a class="list-group-item list-group-item-action" href="https://www.linkedin.com/in/jjosephfreeman/" target="_blank">Linkedin</a>
             <!--Links to my Github profile and automatically opens it in new tab-->
-            <li><a href="https://github.com/GetOffMyFarm" target="_blank">Github</a></li>
-        </ul>
-    </footer>
+            <a class="list-group-item list-group-item-action" href="https://github.com/GetOffMyFarm" target="_blank">Github</a>
+            <!--Link to my resume-->
+            <a class="list-group-item list-group-item-action" href="./Assets/resume/Joseph Freeman.pdf" target="_blank">Resume</a>
+        </div>
+    </div>
+    </main>
+    <!--External links to JQuery and Bootstraps custom javascript, as well as my personal Javascript file-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="Assets/js/script.js"></script>
 </body>
 </html>
