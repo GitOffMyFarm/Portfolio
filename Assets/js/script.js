@@ -1,5 +1,5 @@
 //Array of objects with all my project information stored
-let projects = [
+const projects = [
   {
     title: "Recipe Box",
     deployed: "https://gitoffmyfarm.github.io/Project-One-Recipe-Box/",
@@ -9,12 +9,12 @@ let projects = [
     gitHubLink: "https://github.com/GitOffMyFarm/Project-One-Recipe-Box"
   },
   {
-    title: "Dew Bot",
-    deployed: "https://repl.it/@jfreeman92/Dew-Bot#main.py",
-    image: "./Assets/Pictures/DewBot.jpg",
-    imageAlt: "An Among Us character in Mountain Dew paraphernalia.",
-    description: "A Discord text response bot made for a very specific purpose. The project is housed in Repl and can be found on Github as well.",
-    gitHubLink: "https://github.com/GitOffMyFarm/Dew-Bot"
+    title: "Note Taking App",
+    deployed: "https://mysterious-bastion-22749.herokuapp.com/",
+    image: "./Assets/Pictures/NoteTaker.png",
+    imageAlt: "Front page of note taking application",
+    description: "An app for writing, saving, and deleting personal notes that launches and works in the browser.",
+    gitHubLink: "https://github.com/GitOffMyFarm/Note-Taking-App"
   },
   {
     title: "Password Generator",
@@ -25,12 +25,12 @@ let projects = [
     gitHubLink: "https://github.com/GitOffMyFarm/Password-Generator"
   },
   {
-    title: "Programming Quiz",
-    deployed: "https://gitoffmyfarm.github.io/Quiz/",
-    image: "./Assets/Pictures/Quiz.png",
-    imageAlt: "The quiz landing page",
-    description: "A program quiz with dynamically created quiz cards, heavy on Javascript and made with no framework CSS, currently only deployed in Github.",
-    gitHubLink: "https://github.com/GitOffMyFarm/Quiz"
+    title: "Team Profile Generator",
+    deployed: "https://drive.google.com/file/d/1I8yGlXU2c7xd2mSwAVAwOgrwyZU9DCJW/view",
+    image: "./Assets/Pictures/generator.PNG",
+    imageAlt: "Picture of generated team profile",
+    description: "Console application using inquirer to obtain information about a work team before generator a html page with all that information displayed.",
+    gitHubLink: "https://github.com/GitOffMyFarm/Profile-Generator"
   }
 ];
 //Function that writes a card into the the HTML
