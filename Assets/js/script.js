@@ -1,6 +1,22 @@
 //Array of objects with all my project information stored
 const projects = [
   {
+    title: "Muscle Mates",
+    deployed: "https://intense-peak-98981.herokuapp.com/",
+    image: "./Assets/Pictures/MuscleMates.png",
+    imageAlt: "Image of Muscle Mates Logo on the sites homepage",
+    description: "A dating-style app for finding people to go to the gym with, explore people with like minded activities and fitness goals so you can keep each other accountable and achieve everything you want at the gym.",
+    gitHubLink: "https://github.com/wilks625/MuscleMates"
+  },
+  {
+    title: "Triply",
+    deployed: "https://polar-spire-28260.herokuapp.com/",
+    image: "./Assets/Pictures/triply.png",
+    description: "A Minimalist travel app for those looking to get away and explore some of the smaller cities in America on a budget.",
+    imageAlt: "Image of various cities on the Triply homepage",
+    gitHubLink: "https://github.com/GitOffMyFarm/Escape-Array",
+  },
+  {
     title: "Recipe Box",
     deployed: "https://gitoffmyfarm.github.io/Project-One-Recipe-Box/",
     image: "./Assets/Pictures/RecipeBoxImage.png",
@@ -9,23 +25,7 @@ const projects = [
     gitHubLink: "https://github.com/GitOffMyFarm/Project-One-Recipe-Box"
   },
   {
-    title: "Note Taking App",
-    deployed: "https://mysterious-bastion-22749.herokuapp.com/",
-    image: "./Assets/Pictures/NoteTaker.png",
-    imageAlt: "Front page of note taking application",
-    description: "An app for writing, saving, and deleting personal notes that launches and works in the browser.",
-    gitHubLink: "https://github.com/GitOffMyFarm/Note-Taking-App"
-  },
-  {
-    title: "Password Generator",
-    deployed: "https://gitoffmyfarm.github.io/Password-Generator/",
-    image: "./Assets/Pictures/PasswordGenerator.png",
-    imageAlt: "Snapshot of the password generator launched",
-    description: "A password generator made to meet a variety of password requirements, utilizes checkboxes in HTML and innerText to convey error messages rather than alerts.",
-    gitHubLink: "https://github.com/GitOffMyFarm/Password-Generator"
-  },
-  {
-    title: "Team Profile Generator",
+    title: "Dew Bot",
     deployed: "https://drive.google.com/file/d/1I8yGlXU2c7xd2mSwAVAwOgrwyZU9DCJW/view",
     image: "./Assets/Pictures/generator.PNG",
     imageAlt: "Picture of generated team profile",
