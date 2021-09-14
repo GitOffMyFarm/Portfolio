@@ -25,7 +25,7 @@ const projects = [
     gitHubLink: "https://github.com/GitOffMyFarm/Project-One-Recipe-Box"
   },
   {
-    title: "Dew Bot",
+    title: "Team Profile Generator",
     deployed: "https://drive.google.com/file/d/1I8yGlXU2c7xd2mSwAVAwOgrwyZU9DCJW/view",
     image: "./Assets/Pictures/generator.PNG",
     imageAlt: "Picture of generated team profile",
